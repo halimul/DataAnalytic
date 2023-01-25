@@ -37,7 +37,7 @@ Secara garis besar tahapan yang kami lakukan sebagai berikut :
 
 ## Hasil
 ### Sarimax
-![alt text] (\Portofolio\Portofolio\Data Analytic\DataAnalytic\E-Commerce the Look\images\sarimax.png)
+![alt text](D:\Magang & Kerja\Resume, Cover Letter, Portofolio\Portofolio\Data Analytic\DataAnalytic\E-Commerce the Look\images\sarimax.png)
 * During the holiday period, both hotels have more guests, with the City Hotel having more than the Resort Hotel.
 * In Indonesia, most schools have holidays from June through July. Typically, a lot of families would travel together at that time. This explains why June and July saw an increase in visitors at both hotels. This can be used as one of the reasons for the timing of marketing implementation.
 * From August to September, City Hotel's guest number decreases significantly. 
