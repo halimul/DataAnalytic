@@ -1,4 +1,4 @@
-# Investigate Hotel Business using Data Visualization
+# Visualization of Covid 19 Case Data across Provinces in Indonesia 
 ## Background
 To provide insight for the government in decision-making appropriate to anticipate covid 19 cases in Indonesian provinces, it is required to create a visualization of the number of covid cases in provinces in Indonesia.
 
@@ -25,19 +25,25 @@ The project will go through several stages as follows:
 
 ## Results
 ### Top 5 provinces with the most number of Cases 
+
 ![alt text](/Covid%20Case%2019/images/Kasus%20Terbanyak.png)
 
 ### Top 5 provinces with the most number of Deaths
+
 ![alt text](/Covid%20Case%2019/images/Kasus%20Kematian%20Tertinggi.png)
 
 ### Top 5 Province with the most recovery 
+
 ![alt text](/Covid%20Case%2019/images/Kasus%20Sembuh%20Tertinggi.png)
 
 ### The Number of new cases in DKI Jakarta from 3 Jan 2020 - 7 Sep 2021
+
 ![alt text](/Covid%20Case%2019/images/Trend%20Kasus%20Terbaru%20di%20Provinsi%20DKI%20Jakarta.png)
 
 ### The Number of Deaths in DKI Jakarta from 3 Jan 2020 - 7 Sep 2021
+
 ![alt text](/Covid%20Case%2019/images/Trend%20Kasus%20Kematian%20di%20Provinsi%20DKI%20Jakarta.png)
 
 ### Comparison of new Covid Cases, Deaths and Recovery in Jakarta
+
 ![alt text](/Covid%20Case%2019/images/Perbandingan%20Trend%20Kasus%20Kematian%2C%20Sembuh%20dan%20Terbaru.png)
