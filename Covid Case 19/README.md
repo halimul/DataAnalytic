@@ -19,7 +19,7 @@ The data used in this project consists of 38 columns and 21759 rows. Data can be
 ## Stages
 The project will go through several stages as follows:  
 1. Load data:  load data from source
-2. Data Preprocessing: handling missing values, duplicates data and 
+2. Data Preprocessing: handling missing values and duplicates data 
 3. Visualization: Visualization and analysis of the visualization through the three things above
 
 
