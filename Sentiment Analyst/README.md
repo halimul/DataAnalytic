@@ -2,11 +2,11 @@
 A machine learning end to end flask web app for sentiment analysis model created using Scikit-learn <br />
 
 ### The project uses libraries like :
-Flask <br />
-Numpy <br />
-Pandas <br />
-Scikit Learn <br />
-Werkzeug <br />
+ 1. Flask <br />
+ 2. Numpy <br />
+ 3. Pandas <br />
+ 4. Scikit Learn <br />
+ 5. Werkzeug <br />
 
 ### LET'S TALK ABOUT SENTIMENT ANALYSIS <br />
 Automatically identifying the affective states of text is the process of sentiment analysis, a crucial area of natural language processing. Sentiment analysis is frequently used in customer-generated content, including social network posts, product reviews on websites like Amazon, and reviews of movies. It may be as simple as categorizing a text's polarity as positive or negative, or it may involve more complex tasks like examining sentiment states. <br />
