@@ -1,26 +1,26 @@
-# Deployment Model Machine Learning (Diagnosis Covid 19)
+# Application of Machine Learning Model for Covid 19 Diagnosis
 
-## Deskripsi singkat Proyek
+## Description Project
 
 Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment model Machine Learning untuk Diagnosis Covid 19 menggunakan. Adapun model yang digunakan bernama Categorical Naive Bayes. Model ini sudah di evaluasi dan memiliki tingkat akurasi tertinggi dari dua model Machine Learning lainya yaitu Multibinomial Naive Bayes, dan Decision Tree Classifier. Model akan memprediksi input berupa parameter yang diprediksi pada target terindikasi Covid atau tidak(Poisitif atau Negatif).
 
-## Dataset Pengujian Model Machine Learning
+## Dataset
 
 The data used in this project consists of 12 columns and 5434 rows. Data can be accessed [here](https://drive.google.com/file/d/1MY5eRj6iIKeWFMqseGaCyQ7HXmksZWIH/view?usp=sharing).
 
 #
 
-## Tahap Pengembangan Diagnosis Covid 19 Menggunakan Machine Learning
+## Stages
 
-Proyek ini memiliki beberapa tahap sebagai berikut:  
-1. Load data:  load data from source
+This project has several stages as follows:  
+1. Loading data: loading data from the source
 2. Data Preprocessing: 
-    * handling missing values, 
-    * duplicates data, 
-    * Encoding Tipe Data, 
-    * Pemilihan Fitur Target dan Penguji,
-    * Splitting Dataset (Training-Testing = 80:20).
-3. Build Model Machine Learning : 
+    * handle missing values, 
+    * Duplicating data, 
+    * Data Type Encoding, 
+    * Target and Tester Feature Selection,
+    * Dataset Splitting (Training-Testing = 80:20).
+3. Building Machine Learning Models: 
     * Multibinomial Naive Bayes.
     * Categorical Naive Bayes.
     * Decision Tree Classification
@@ -30,45 +30,45 @@ Proyek ini memiliki beberapa tahap sebagai berikut:
 
 #
 
-## Sekilas mengenai input Model
+## Model Input Parameter
 
 ![alt text](/Diagnosis%20of%20Covid%2019/Tabel%20Input.png)
-Agar dapat mendiagnosis Positif atau Negatif, data input model harus memilih Yes atau No sesuai dengan parameter yang disebutkan diatas   
+In order to diagnose Positive or Negative, the model input data must select Yes or No according to the parameters mentioned above.
 
 #
 
-## File dan kegunaannya
+## Files and its uses
 
--   app.py --> Berisi konfigurasi route dan proses prediksi model untuk API.
--   covid-home.html --> Berisi struktur template website Diagnosa Covid 19.
--   deploy_dt.sav --> Model Machine Learning yang sudah di-training.
--   README --> Petunjuk mengenai proyek.
+- app.py --> Contains route configuration and model prediction process for API.
+- covid-home.html --> Contains the structure of the Covid-19 Diagnosis website template.
+- deploy_dt.sav --> Machine Learning model that has been trained.
+- README --> Instructions about the project.
 
 #
 
-## Cara menjalankan API pada komputer Anda
+## How to run the API on your computer
 
-1. Pastikan Anda sudah menginstall Anaconda.
-1. Buka terminal/command prompt/power shell.
-1. Buat virtual environment dengan\
-   `conda create -n <nama-environment> python=3.9`
-1. Aktifkan virtual environment dengan\
-   `conda activate <nama-environment>`
-1. Install semua dependency/package Python dengan\
+1. Make sure you have Anaconda installed.
+1. Open a terminal/command prompt/power shell.
+1. Create a virtual environment with
+   `conda create -n <environment-name> python=3.9`.
+1. Activate the virtual environment with
+   `conda activate <environment-name>`
+1. Install all Python dependencies/packages with
    `pip install -r requirements.txt`
-1. Jalankan API menggunakan perintah\
+1. Run the API using the command
    `python app.py`
 
 #
 
-## Akses melalui Website
+## Access via Website
 
-1. Anda akan diberikan URL untuk membuka website berupa `localhost:5000/` atau `127.0.0.1:5000/`.
-1. Buka URL dengan browser, coba masukan jawaban berupa YES atau NO pada tiap tabel Dashboard.
-1. Anda akan diberikan hasil Diagnosa beruapa Positif atau Negatif pada halaman website.
+1. You will be given a URL to open the website in the form of `localhost:5000/` or `127.0.0.1:5000/`.
+1. Open the URL with a browser, then input the answer in the form of YES or NO on each Dashboard table.
+1. You will be given Positive or Negative Diagnosis results on the website page.
 
 #
 
-## Hasil Demonstrasi Dashboard Diagnosis Covid 19
+## Covid 19 Diagnosis Dashboard Demonstration Results
 
 ![](/Diagnosis%20of%20Covid%2019/Demo.gif)
