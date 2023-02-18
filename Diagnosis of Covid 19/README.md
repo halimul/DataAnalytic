@@ -2,7 +2,7 @@
 
 ## Description Project
 
-Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment model Machine Learning untuk Diagnosis Covid 19 menggunakan. Adapun model yang digunakan bernama Categorical Naive Bayes. Model ini sudah di evaluasi dan memiliki tingkat akurasi tertinggi dari dua model Machine Learning lainya yaitu Multibinomial Naive Bayes, dan Decision Tree Classifier. Model akan memprediksi input berupa parameter yang diprediksi pada target terindikasi Covid atau tidak(Poisitif atau Negatif).
+This repository contains all the files needed to deploy the Machine Learning model for Covid 19 Diagnosis using. The model used is called Categorical Naive Bayes. This model has been evaluated and has the highest accuracy rate of the other two Machine Learning models, namely Multibinomial Naive Bayes, and Decision Tree Classifier. The model will predict the input in the form of predicted parameters on the target indicating Covid or not (Positive or Negative).
 
 ## Dataset
 
