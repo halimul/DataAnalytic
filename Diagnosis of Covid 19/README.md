@@ -44,7 +44,6 @@ Agar dapat mendiagnosis Positif atau Negatif, data input model harus memilih Yes
 -   deploy_dt.sav --> Model Machine Learning yang sudah di-training.
 -   README --> Petunjuk mengenai proyek.
 
-
 #
 
 ## Cara menjalankan API pada komputer Anda
@@ -60,11 +59,16 @@ Agar dapat mendiagnosis Positif atau Negatif, data input model harus memilih Yes
 1. Jalankan API menggunakan perintah\
    `python app.py`
 
+#
+
 ## Akses melalui Website
 
 1. Anda akan diberikan URL untuk membuka website berupa `localhost:5000/` atau `127.0.0.1:5000/`.
 1. Buka URL dengan browser, coba masukan jawaban berupa YES atau NO pada tiap tabel Dashboard.
 1. Anda akan diberikan hasil Diagnosa beruapa Positif atau Negatif pada halaman website.
 
+#
+
 ## Hasil Demonstrasi Dashboard Diagnosis Covid 19
+
 ![](/Diagnosis%20of%20Covid%2019/Demo.gif)
