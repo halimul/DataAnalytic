@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COVID-19 Diagnostic Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      input[type="number"],
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+      }
+
+      input[type="submit"] {
+        background-color: #04aa6d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-top: 6px;
+      }
+
+      input[type="reset"] {
+        background-color: #df4759;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-top: 6px;
+        margin-left: 10px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25,
+        .col-75,
+        input[type="submit"] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <br><center><h1>Diagnosa COVID-19</h1></center><br>
+    <div class="container">
+      <form action="{{url_for('predict_covid')}}" method="POST">
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl1">Sesak Napas</label>
+          </div>
+          <div class="col-75">
+            <select name="a">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl2">Demam</label>
+          </div>
+          <div class="col-75">
+            <select name="b">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl3">Batuk Kering</label>
+          </div>
+          <div class="col-75">
+            <select name="c">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl4">Sakit Tenggorokan</label>
+          </div>
+          <div class="col-75">
+            <select name="d">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl5">Hidung Meler</label>
+          </div>
+          <div class="col-75">
+            <select name="e">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl6">Sakit Kepala</label>
+          </div>
+          <div class="col-75">
+            <select name="f">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl7">Kelelahan</label>
+          </div>
+          <div class="col-75">
+            <select name="g">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lbl8">Gastrointestinal</label>
+          </div>
+          <div class="col-75">
+            <select name="h">
+                <option value="0" selected>No</option>
+                <option value="1" selected>Yes</option>
+                <option value="" selected disabled hidden>-- Pilih --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="lbl9">Kontak dengan Pasien COVID-19</label>
+            </div>
+            <div class="col-75">
+              <select name="i">
+                  <option value="0" selected>No</option>
+                  <option value="1" selected>Yes</option>
+                  <option value="" selected disabled hidden>-- Pilih --</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="lbl10">Menghadiri Pertemuan Besar</label>
+            </div>
+            <div class="col-75">
+              <select name="j">
+                  <option value="0" selected>No</option>
+                  <option value="1" selected>Yes</option>
+                  <option value="" selected disabled hidden>-- Pilih --</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+              <label for="lbl11">Keluarga Bekerja di Tempat Umum</label>
+            </div>
+            <div class="col-75">
+              <select name="k">
+                  <option value="0" selected>No</option>
+                  <option value="1" selected>Yes</option>
+                  <option value="" selected disabled hidden>-- Pilih --</option>
+              </select>
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit"/>
+        </div>
+        
+      </form>
+    </div>
+
+
+    <br><h3 style="font-size: x-large; padding-left: 105px;">
+      Hasil Diagnosa Paparan COVID-19: {% if prediction == 1 %}
+      <span style="color: forestgreen"> Positif </span>
+
+      {% elif prediction == 0 %}
+      <span style="color: red"> Negatif </span>
+      {% endif %}
+    </h3>
+    
+    <br><br>
+    <center><a href="/">back to homepage</a></center>
+    <br><br>
+
+  </body>
+</html>
